@@ -18,7 +18,7 @@ pipeline {                                  // 1  // Defines the start of the Je
             }                               // 7  // Ends the environment block for this stage
 
             steps {                         // 8  // Defines the steps that will be executed in this stage
-                withSonarQubeEnv('saidem y-sonarqube-server') { // Executes the SonarQube analysis within the SonarQube environment
+                withSonarQubeEnv('saidemy-sonarqube-server') { // Executes the SonarQube analysis within the SonarQube environment
                     sh "${scannerHome}/bin/sonar-scanner"      // Runs the SonarQube scanner tool
                 }                           //    // Ends the withSonarQubeEnv block
             }                               // 8  // Ends the steps block for 'SonarQube analysis' stage
