@@ -14,7 +14,7 @@ pipeline {                                  // 1  // Defines the start of the Je
 
         stage('SonarQube analysis') {       // 6  // Creates a stage named 'SonarQube analysis'
             environment {                   //    // Defines environment variables specific to this stage
-                scannerHome = tool 'saidem y-sonar-scanner' // Sets the SonarQube scanner tool
+                scannerHome = tool 'saidemy-sonar-scanner' // Sets the SonarQube scanner tool
             }                               // 7  // Ends the environment block for this stage
 
             steps {                         // 8  // Defines the steps that will be executed in this stage
